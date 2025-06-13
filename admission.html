@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Admission IST</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="image\logo.webp">
+                <div class="logo-text">
+                    <h1>Institut Supérieur de Technologies</h1>
+                    <p>Des formations de qualité pour des metiers d'avenir ! </p>
+                </div>
+            </div>
+            <div class="contact-header">
+
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="academique.html">Académique </a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="container hero-content">
+            <h2>Bienvenue Sur la page Admission  </h2>
+
+         </div>
+    </section> 
+<section id="presentation" class="presentation">
+			<div class="container">
+			<div class="section-title">
+ 				<h2>Formulaire d'admission </h2>
+			</div>
+			</div>
+   
+<section class="form-section">
+ <div class="container form-container">
+<form action="#" method="post">
+                           <label for="nom" class="required">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div>
+                    <label for="prenom" class="required">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div>
+                    <label for="date_naissance" class="required">Date de naissance</label>
+                    <input type="date" id="date_naissance" name="date_naissance" required>
+                </div>
+                <div>
+                    <label for="lieu_naissance" class="required">Lieu de naissance</label>
+                    <input type="text" id="lieu_naissance" name="lieu_naissance" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div>
+                    <label for="nationalite" class="required">Nationalité</label>
+                    <input type="text" id="nationalite" name="nationalite" required>
+                </div>
+                <div>
+                    <label for="sexe" class="required">Sexe</label>
+                    <select id="sexe" name="sexe" required>
+                        <option value="">-- Sélectionnez --</option>
+                        <option value="M">Masculin</option>
+                        <option value="F">Féminin</option>
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Coordonnées</h2>
+            
+            <label for="adresse" class="required">Adresse</label>
+            <textarea id="adresse" name="adresse" required></textarea>
+            
+            <div class="form-row">
+                <div>
+                    <label for="ville" class="required">Ville</label>
+                    <input type="text" id="ville" name="ville" required>
+                </div>
+                <div>
+                    <label for="pays" class="required">Pays</label>
+                    <input type="text" id="pays" name="pays" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div>
+                    <label for="telephone" class="required">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+                <div>
+                    <label for="email" class="required">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <h2>Formation souhaitée</h2>
+            
+            <label for="filiere" class="required">Filière souhaitée</label>
+            <select id="filiere" name="filiere" required>
+                <option value="">-- Sélectionnez une filière --</option>
+                <option value="ingenierie">Ingénierie</option>
+                <option value="commerce">Commerce</option>
+                <option value="arts">Arts</option>
+                <option value="sciences">Gestion</option>
+                <option value="lettres">Lettres et Sciences Humaines</option>
+            </select>
+            
+            <label for="niveau" class="required">Niveau d'admission</label>
+            <select id="niveau" name="niveau" required>
+                <option value="">-- Sélectionnez un niveau --</option>
+                <option value="licence1">Licence 1ère année</option>
+                <option value="licence2">Licence 2ème année</option>
+                <option value="licence3">Licence 3ème année</option>
+                <option value="master1">Master 1ère année</option>
+                <option value="master2">Master 2ème année</option>
+                <option value="doctorat">Doctorat</option>
+            </select>
+            
+            <label for="annee" class="required">Année universitaire</label>
+            <input type="text" id="annee" name="annee" placeholder="Ex: 2023-2024" required>
+        </div>
+        
+        <div class="form-section">
+            <h2>Parcours Académique</h2>
+            
+            <label for="dernier_diplome" class="required">Dernier diplôme obtenu</label>
+            <input type="text" id="dernier_diplome" name="dernier_diplome" required>
+            
+            <label for="etablissement" class="required">Établissement d'origine</label>
+            <input type="text" id="etablissement" name="etablissement" required>
+            
+            <label for="moyenne">Moyenne générale</label>
+            <input type="text" id="moyenne" name="moyenne">
+            
+            <label for="autres_formations">Autres formations ou expériences pertinentes</label>
+            <textarea id="autres_formations" name="autres_formations"></textarea>
+        </div>
+        
+        <div class="form-section">
+            <h2>Pièces jointes</h2>   
+            <label for="releve_notes">Relevé de notes (PDF)</label>
+            <input type="file" id="releve_notes" name="releve_notes" accept=".pdf">
+            
+            <label for="diplome">Copie du diplôme (PDF)</label>
+            <input type="file" id="diplome" name="diplome" accept=".pdf">
+            
+            <label for="photo">Photo d'identité (JPG/PNG)</label>
+            <input type="file" id="photo" name="photo" accept=".jpg,.jpeg,.png">
+            
+            <p class="note">Taille maximale par fichier : 2MB. Formats acceptés : PDF pour les documents, JPG/PNG pour les photos.</p>
+        </div>
+        
+        <div class="form-section">
+            <h2>Déclaration</h2>
+            
+            <p>
+                <input type="checkbox" id="declaration" name="declaration" required>
+                <label for="declaration" style="display: inline;">Je déclare sur l'honneur que les informations fournies dans ce formulaire sont exactes et complètes.</label>
+            </p>
+            
+            <p class="note">Les champs marqués d'un astérisque (*) sont obligatoires.</p>
+        </div>
+        
+        <button type="submit">Soumettre la demande d'admission</button>
+    </form>
+	<div id="confirmation" style="margin-top: 20px; font-weight: bold; color: green;"></div>
+
+
+ <!-- Pied de page -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Adresse</h3>
+                    <p><strong>Adresse :</strong> 8 Campus : Gounghin,Tampouy,Wayalghin</p>
+		    <p>Azimo Ouaga2000,Ouaga 2000,Tenkodogo</p>
+		    <p>Tanghin,Bobo-Dioulasso,Campus en ligne</p>
+
+                </div>
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <a href="accueil.html">Accueil</a>
+		   <a href="academique.html">Académique </a>
+                    <a href="admission.html">Admission</a>
+                    <a href="galerie.html">Galerie</a>
+                    
+                </div>
+                <div class="footer-column">
+                    <h3>Téléphone </h3>
+                    <p>Vous pouriez nous joindre à travers ces numéros </p>
+                    <div class="social-links">
+			<ul>
+                         <li> (+226) 25 34 02 72</li>
+                         <li>(+226) 25 34 36 88</li>
+                         <li>(+226) 78 23 88 00</li>
+                         <li>(+226) 79 16 09 09</li>
+                         <li>(+226) 68 28 03 03</li>
+		         <li>(+226) 78 89 77 14</li>
+			</ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Institut Supérieur de Technologie OUEDRAOGO Ousseni DIALLO Ali. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
